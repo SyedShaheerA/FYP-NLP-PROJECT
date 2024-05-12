@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Page</title>
+</head>
+<body>
+    <h1>Enter Input Value</h1>
+    <form action="/" method="post">
+        <label for="input_value">Input Value:</label>
+        <input type="text" id="input_value" name="input_value"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    {% if prediction %}
+    <b>OUTPUT: {{ prediction }}</b>
+    {% endif %}
+</body>
+</html>
